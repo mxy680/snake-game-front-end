@@ -1,0 +1,49 @@
+.leaderboard-container {
+  padding: 20px;
+}
+
+.leaderboard-title {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Centering the title */
+}
+
+.back-home {
+  display: block; /* Makes the button a block element */
+  margin: 20px auto; /* Centers the button horizontally */
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-home:hover {
+  background-color: #0056b3;
+}
+
+.leaderboard-table-container {
+  width: 100%;
+  max-width: 600px;
+  overflow-x: auto;
+  margin: 0 auto; /* Centers the table container */
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-table th {
+  background-color: #eee;
+  font-weight: bold;
+}

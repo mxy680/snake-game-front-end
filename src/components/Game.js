@@ -58,7 +58,7 @@ const Game = () => {
     if (head.x === food.x && head.y === food.y) {
       // Reposition food
       setFood(getRandomCoordinates());
-      setScore(currentScore => currentScore + 0.5); // Increment score
+      setScore(currentScore => currentScore + 1); // Increment score
       return true; // Indicate the food was eaten
     }
     return false;

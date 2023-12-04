@@ -2,13 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Menu.css'; 
 import { usePlayer } from '../PlayerContext'; 
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
 
-    const { playerId, setPlayerId } = usePlayer(); 
+    const { playerId, setPlayerId } = usePlayer();
+    const navigate = useNavigate(); 
 
     const handleLogout = () => {
         setPlayerId(null);
+        navigate('/');
     }
     
     return (

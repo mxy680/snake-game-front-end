@@ -10,7 +10,7 @@ const EnterCredentials = () => {
   const { setPlayerId } = usePlayer();
   const navigate = useNavigate();
 
-  const apiPath = 'http://localhost:3001/players';
+  const apiPath = 'https://snake-game-j7eb.onrender.com/players';
 
   useEffect(() => {
     const getPlayers = async () => {

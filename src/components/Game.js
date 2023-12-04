@@ -13,8 +13,6 @@ const Game = () => {
 
   const [score, setScore] = useState(0); // Assuming you have a way to calculate the score
 
-  const apiPath = 'http://localhost:3001/players';
-
   const moveSnake = useCallback(() => {
     if (gameOver) {
       return; // Stop moving the snake if the game is over

@@ -6,7 +6,7 @@ const Leaderboard = () => {
   const [players, setPlayers] = useState([]);
   const navigate = useNavigate();
 
-  const apiPath = 'http://localhost:3001/players';
+  const apiPath = 'https://snake-game-j7eb.onrender.com/players';
 
   const goHome = () => {
     navigate('/menu'); // Navigate to the home route (adjust the route as needed)

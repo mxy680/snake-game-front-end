@@ -13,6 +13,8 @@ const Game = () => {
 
   const [score, setScore] = useState(0); // Assuming you have a way to calculate the score
 
+  const apiPath = 'https://snake-game-j7eb.onrender.com/players';
+
   const moveSnake = useCallback(() => {
     if (gameOver) {
       return; // Stop moving the snake if the game is over
@@ -115,7 +117,7 @@ const Game = () => {
   const sendScoreToAPI = async () => {
     if (playerId) {
       try {
-        const response = await fetch(`http://localhost:3001/players/${playerId}/scores`, {
+        const response = await fetch(`${apiPath}/${playerId}/scores`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
